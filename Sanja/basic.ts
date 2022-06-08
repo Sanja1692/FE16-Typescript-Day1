@@ -61,18 +61,43 @@
 // }while(k <= length);
 
 //SOLUTION
-for (let i = 0; i <= 10; i++){    
-    document.write(i + " x " + 1 + " = " + i*1 +"<br>");
-    document.write(i + " x " + 2 + " = " + i*2 +"<br>");
-    document.write(i + " x " + 3 + " = " + i*3 +"<br>");
-    document.write(i + " x " + 4 + " = " + i*4 +"<br>");
-    document.write(i + " x " + 5 + " = " + i*5 +"<br>");
-    document.write(i + " x " + 6 + " = " + i*6 +"<br>");
-    document.write(i + " x " + 7 + " = " + i*7 +"<br>");
-    document.write(i + " x " + 8 + " = " + i*8 +"<br>");
-    document.write(i + " x " + 9 + " = " + i*9 +"<br>");
-    document.write(i + " x " + 10 + " = " + i*10 +"<br>");
+// for (let i = 0; i <= 10; i++){    
+//     document.write(i + " x " + 1 + " = " + i*1 +"<br>");
+//     document.write(i + " x " + 2 + " = " + i*2 +"<br>");
+//     document.write(i + " x " + 3 + " = " + i*3 +"<br>");
+//     document.write(i + " x " + 4 + " = " + i*4 +"<br>");
+//     document.write(i + " x " + 5 + " = " + i*5 +"<br>");
+//     document.write(i + " x " + 6 + " = " + i*6 +"<br>");
+//     document.write(i + " x " + 7 + " = " + i*7 +"<br>");
+//     document.write(i + " x " + 8 + " = " + i*8 +"<br>");
+//     document.write(i + " x " + 9 + " = " + i*9 +"<br>");
+//     document.write(i + " x " + 10 + " = " + i*10 +"<br>");
+// }
 
 
-}
+// with ARRAY
+// var array: number[] = [];
+// // Push numbers from 1 to 10 into array
 
+// for (let i=1; i<=10; i++){
+//     array.push(i);
+// }
+// //Other loop
+
+// for (let j: number = 0; j < array.length; j++) {
+//     for (let i: number = 0; i < array.length; i++) {
+//         var result: number = array[i]*array[j];
+//         var displ: string = `${array[i]}x${array[j]} = ${result}`
+//         console.log(displ);
+//     }
+// }
+
+
+//another way
+function multiply (num1: number) {
+    for (let i=1; i <= 10; i++) {
+      return i * num1;
+    };
+  };
+  
+  console.log(multiply(1));

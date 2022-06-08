@@ -151,3 +151,18 @@ person1.forEach(function(val){
         console.log(val.lName); //5 seconds after opening the page that prints your last name in the console 10 times.
     }, 5000)
 })
+
+//Ex 3
+// Create an array of names, this array should only accept strings.
+// 1. Print only the index of the elements.
+// 2. Print only the values. 
+// 3. Print both index and values.
+
+let students: string[] = ["Doe", "Grey", "Black", "King", "Sunflower"]
+for (let i= 0; i < students.length; i++){
+  // document.write(`Student index is: ${i} <br>`)
+  // document.write(`Student name is: ${students[i]} <br>`)
+  document.write(`Student index is: ${i} and the name is: ${students[i]} <br>`)
+
+
+}

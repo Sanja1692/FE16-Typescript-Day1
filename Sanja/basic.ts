@@ -101,3 +101,53 @@ function multiply (num1: number) {
   };
   
   console.log(multiply(1));
+
+// Ex 2
+
+// 1. Print your full name in the browser (you will have an object that has 2 properties fName and lName).
+// 2. Print your first name 10 times in the browser using a forEach loop (don't forget that forEach loop work on arrays, so you can put the object in an array and repeat it). 
+// 3. A function should be triggered 5 seconds after opening the page that prints your last name in the console 10 times.
+
+// let me = {
+//     fName: "Sanja",
+//     lName: "Kostantinovic"
+// }
+// var displayMyName = (document.getElementById("result") as HTMLElement);
+
+// function output (){
+
+//     const arr = [];
+//     for (let i = 0; i < 10; i++) {
+//     arr.push(me.fName);
+//     }
+
+//     var fullname = "";
+
+//     arr.forEach(function outputText() {
+//     fullname += ` ${me.fName} ${me.lName} <br>`;
+//     });
+
+//     // console.log(fullname);
+//     displayMyName.innerHTML = fullname;
+// }
+
+// setTimeout(output, 5000);
+// // document.write(`${me.fName} ${me.lName}`);
+
+
+
+//FOR
+var person = {fName: "Sanja", lName: "Pavic"}
+
+var person1 = [];
+for (let i = 0; i < 10; i++) {
+    person1.push(person)
+    document.write(`${person.fName} ${person.lName} <br>`)
+}
+
+person1.forEach(function(val){
+    console.log(val.fName);
+    setTimeout(()=>{
+        console.log(val.lName); //5 seconds after opening the page that prints your last name in the console 10 times.
+    }, 5000)
+})
